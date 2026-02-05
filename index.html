@@ -1,13 +1,344 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/LOGO AR-2.svg" />
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="icons/fontawesome/css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Portafolio</title>
 </head>
+
 <body>
-    <img src="img/LOGO AR-2.svg" class="logo" alt="">
+    <!-- Encabezado -->
+    <div class="contenedor__header">
+        <header>
+            <div class="logo">
+                <a href="#inicio">Arturo</a>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <!--<li><a href="#inicio">INICIO</a></li>-->
+                    <li><a href="#portafolio" onclick="seleccionar()">PORTAFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav__responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- Inicio -->
+    <section id="inicio" class="inicio">
+        <div class="contenedor__banner wow animate__animated animate__backInUp">
+            <div class="contenedor__img wow animate__animated animate__bounceInRight">
+                <img src="img/LOGO AR-2.svg" alt="Arturo Santiago">
+            </div>
+            <div class="contenedor__informacion wow animate__animated animate__bounceInLeft">
+                <h1>ARTURO SANTIAGO</h1>
+                <h2>Desarrollador FrondEnd especializado en plataformas web, ecommerce y sistemas con usuarios y pagos
+                    en
+                    línea</h2>
+                <h3>Diseño y desarrollo experiencias digitales funcionales, escalables y seguras para negocios que
+                    venden
+                    servicios, cursos y productos en internet</h3>
+                <div class="redes">
+                    <a href="#portafolio">Ver proyectos</a>
+                    <a href="#contacto">Contactar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre mi -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenedor__sobremi">
+            <h2>Sobre Mi</h2>
+
+            <p class="wow animate__animated animate__bounceInRight"><span>Hola, soy Arturo Santiago</span> y soy
+                desarrollador web con enfoque FrontEnd, especializado en la
+                creación de plataformas dinámicas, ecommerce y sistemas con gestión de usuarios, roles y pagos en línea.
+                Aunque mi fuerte es el FrondEnd, tengo la capacidad de integrar soluciones Full-Stack cuando el proyecto
+                lo requiere, asegurando que cada plataforma no solo se vea bien, sino que funcione de forma eficiente,
+                escalable y alineada a los objetivos del negocio. <br><br>
+                Trabajo como Freelancer bajo contrato, puedo facturar y me adapto tanto a proyectos puntuales como a
+                colaboraciones a largo plazo. Me interesa involucrarme en proyectos donde la tecnología aporte valor
+                real, automatice procesos y mejore la experiencia del usuario final.
+            </p>
+
+            <div class="fila">
+                <div class="col wow animate__animated animate__bounceInLeft">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            03/02/1999
+                        </li>
+                        <li>
+                            <strong>Correo electrónico</strong>
+                            arturdev99@gmail.com
+                        </li>
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>Freelance</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col wow animate__animated animate__bounceInRight">
+                    <h3>Intereses</h3>
+                    <div class="contenedor__intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>JUEGOS</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJES</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-dumbbell"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="skills">
+        <div class="contenedor__skills">
+            <h2>Skills</h2>
+
+            <div class="fila">
+                <div class="col wow animate__animated animate__backInUp">
+                    <!--<h3>Habilidades técnicas</h3>-->
+
+                    <div class="skill">
+                        <i class="fa-brands fa-html5"></i>
+                        <i class="fa-brands fa-css3"></i>
+                        <span>HTML y CSS</span>
+                        <!--<div class="barra__skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-file"></i>
+                        <span>JavaScript</span>
+                        <!--<div class="barra__skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-angular"></i>
+                        <span>Angular</span>
+                        <!--<div class="barra__skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-java"></i>
+                        <span>Java</span>
+                        <!--<div class="barra__skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="skill">
+                        <i class="fa-solid fa-database"></i>
+                        <span>Mysql</span>
+                        <!--<div class="barra__skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-wordpress"></i>
+                        <span>Wordpress</span>
+                        <!--<div class="barra__skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-shopify"></i>
+                        <span>Shopify</span>
+                        <!--<div class="barra__skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>-->
+                    </div>
+                    <div class="skill">
+                        <i class="fa-brands fa-wix"></i>
+                        <span>Wix</span>
+                        <!--<div class="barra__skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portafolio -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenedor__portafolio">
+            <h2>Portafolio</h2>
+
+            <div class="galeria wow animate__animated animate__backInUp">
+                <div class="proyecto">
+                    <img src="img/acmed.png" alt="Acmed">
+
+                    <a href="https://acmed.mx/" target="_blank">
+                        <div class="overlay">
+                            <h3>Web informativa</h3>
+                            <p>Acmed</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/perfumesEuropeos.png" alt="Perfumes europeos">
+
+                    <a href="https://www.perfumeseuropeos.com/" target="_blank">
+                        <div class="overlay">
+                            <h3>Ecommerce</h3>
+                            <p>Perfumes Europeos</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/meeimex.png" alt="Meeimex">
+
+                    <a href="https://meeimex.com/" target="_blank">
+                        <div class="overlay">
+                            <h3>Plataforma web con usuarios y roles</h3>
+                            <p>Meeimex</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/interlogiscorp.png" alt="Interlogiscorp">
+
+                    <a href="https://interlogiscorp.com/" target="_blank">
+                        <div class="overlay">
+                            <h3>Plataforma de contenido privado</h3>
+                            <p>Interlogiscorp</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/acufis.png" alt="Acufis">
+
+                    <a href="https://acufis.com/" target="_blank">
+                        <div class="overlay">
+                            <h3>Sitio web de servicios profesionales</h3>
+                            <p>Acufis</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <img src="img/drafernieves.png" alt="Toothacademy">
+
+                    <a href="https://drafernieves.com/" target="_blank">
+                        <div class="overlay">
+                            <h3>Web profesional</h3>
+                            <p>Toothacademy</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <div class="contenedor__contacto">
+            <h2>Conctacto</h2>
+            <p class="wow animate__animated animate__bounceInRight">Si buscas un desarrollador que combine criterio
+                técnico, enfoque visual y entendimiento del negocio
+                digital, estaré encantado de colaborar en tu proyecto.</p>
+
+            <div class="fila">
+                <!-- Formulario -->
+                <!-- 
+                <div class="col">
+                    <input type="text" placeholder="Nombre" name="" id="">
+                    <input type="text" placeholder="Número telefónico" name="" id="">
+                    <input type="text" placeholder="Correo electrónico" name="" id="">
+                    <input type="text" placeholder="Asunto" name="" id="">
+                    <textarea placeholder="Mensaje" cols="30" rows="10" name="" id=""></textarea>
+                    <button>
+                        Enviar<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                -->
+
+                <div class="col  wow animate__animated animate__bounceInLeft">
+                    <div class="info">
+                        <ul>
+                            <a href="https://api.whatsapp.com/send?phone=525547288435" target="_blank">
+                                <li>
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                    Whatsapp: 5547288435
+                                </li>
+                            </a>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Correo electrónico: arturdev99@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <!--
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        -->
+        <div class="derechos wow animate__animated animate__backInDown">
+            <p>&copy; 2021 || Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/wow.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
