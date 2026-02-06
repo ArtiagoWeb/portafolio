@@ -599,6 +599,22 @@ footer .arriba {
         padding: 10px 0;
     }
 
+    .sobremi .fila .col {
+        width: 100%;
+    }
+    .sobremi .contenedor__sobremi p {
+        text-align: center;
+    }
+    .sobremi .fila .col h3 {
+        text-align: center;
+    }
+    .sobremi .fila .col ul {
+        margin-bottom: 50px;
+    }
+    .sobremi .fila .col .contenedor__intereses {
+        justify-content: center;
+    }
+
     .skills .fila .col {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -608,7 +624,7 @@ footer .arriba {
         display: block;
     }
     .sobremi .fila .col {
-        width: fit-content;
+        width: 100%;
     }
 
     .skills .fila {
@@ -644,5 +660,40 @@ footer .arriba {
     }
     .contacto .contenedor__contacto .fila {
         margin-bottom: 80px;
+    }
+}
+@media (max-width: 500px) {
+    .inicio .contenedor__banner h1 {
+        font-size: 1.8rem;
+    }
+    .inicio .contenedor__banner h2 {
+        font-size: 1rem;
+    }
+    .inicio .contenedor__banner h3 {
+        font-size: .8rem;
+    }
+    .inicio .contenedor__banner .redes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .inicio .contenedor__banner .redes a {
+        padding: .5rem .8rem;
+    }
+    
+    .sobremi .fila .col .contenedor__intereses {
+        gap: 1rem;
+    }
+    .sobremi .fila .col .contenedor__intereses .interes {
+        margin: 0;
+    }
+
+    .contacto .fila .col {
+        padding: 80px 0 0 0;
+    }
+}
+@media (max-width: 400px) {
+    .inicio .contenedor__banner {
+        margin-top: 90px;
     }
 }
